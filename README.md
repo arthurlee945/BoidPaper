@@ -20,7 +20,7 @@
 
 ```
 ---
-Default Scopname is **@repo**
+Default Scopname is **@boidpaper**
 ---
 **If DB included add in package.json and turbo.json**
 ```js

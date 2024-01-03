@@ -12,7 +12,7 @@ export const initPkgGenerator = (plop: PlopTypes.NodePlopAPI) =>
             {
                 type: "input",
                 name: "name",
-                message: "What is the name of the package? (You can skip the `@repo/` prefix)",
+                message: "What is the name of the package? (You can skip the `@boidpaper/` prefix)",
             },
             {
                 type: "input",
@@ -28,8 +28,8 @@ export const initPkgGenerator = (plop: PlopTypes.NodePlopAPI) =>
         actions: [
             (answers: InitUserInputProps) => {
                 if ("name" in answers && typeof answers.name === "string") {
-                    if (answers.name.startsWith("@repo/")) {
-                        answers.name = answers.name.replace("@repo/", "");
+                    if (answers.name.startsWith("@boidpaper/")) {
+                        answers.name = answers.name.replace("@boidpaper/", "");
                     }
                 }
                 return "Config sanitized";

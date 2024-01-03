@@ -1,5 +1,5 @@
 {
-  "name": "@repo/eslint-config",
+  "name": "@boidpaper/eslint-config",
   "license": "MIT",
   "version": "0.1.0",
   "private": true,
@@ -15,8 +15,8 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.5.6",
-    "@repo/prettier": "workspace:*",
-    "@repo/tsconfig": "workspace:^",
+    "@boidpaper/prettier": "workspace:*",
+    "@boidpaper/tsconfig": "workspace:^",
     "@types/eslint": "^8.44.9",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
@@ -38,5 +38,5 @@
       "./base.cjs"
     ]
   },
-  "prettier": "@repo/prettier"
+  "prettier": "@boidpaper/prettier"
 }

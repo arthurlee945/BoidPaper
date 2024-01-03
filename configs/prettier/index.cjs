@@ -20,7 +20,7 @@ const config = {
     "",
     "<THIRD_PARTY_MODULES>",
     "",
-    "^@repo/(.*)$",
+    "^@boidpaper/(.*)$",
     "",
     "^~/",
     "^[../]",

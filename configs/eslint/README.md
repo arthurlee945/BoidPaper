@@ -1,4 +1,4 @@
-# `@repo/eslint-config`
+# `@boidpaper/eslint-config`
 
 ## Collection of internal eslint configurations.
 

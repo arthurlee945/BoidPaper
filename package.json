@@ -25,7 +25,7 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
-    "@repo/tsconfig": "workspace:^",
+    "@boidpaper/tsconfig": "workspace:^",
     "@turbo/gen": "^1.11.2",
     "dotenv-cli": "^7.3.0",
     "eslint": "^8.56.0",

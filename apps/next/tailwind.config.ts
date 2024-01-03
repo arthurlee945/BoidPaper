@@ -1,6 +1,6 @@
 import { type Config } from "tailwindcss";
 
-import baseConfig from "@repo/tailwind";
+import baseConfig from "@boidpaper/tailwind";
 
 export default {
   darkMode: "class",

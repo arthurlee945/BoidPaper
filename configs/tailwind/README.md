@@ -1,3 +1,3 @@
-# `@repo/tailwind`
+# `@boidpaper/tailwind`
 
 Collection of internal tailwindcss configurations.
