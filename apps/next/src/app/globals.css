@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "@repo/tailwind/defaults/font/font.css";
+@layer base {
+  body {
+    @apply relative mx-auto overflow-x-hidden;
+  }
+}

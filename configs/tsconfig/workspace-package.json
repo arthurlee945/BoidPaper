@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Workspace Package",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "lib": ["es2017", "es7", "es6", "es2022"],
+    "jsx": "preserve",
+
+    "rootDir": "./src",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+
+    "outDir": "./dist",
+
+    "allowJs": true,
+
+    "sourceMap": true,
+
+    "composite": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "./dist"]
+}

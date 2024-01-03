@@ -1,0 +1,49 @@
+{
+  "name": "mono-boilerplate",
+  "private": true,
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "dotenv -- turbo run dev --filter=./apps/**",
+    "dev:pkg": "dotenv -- turbo run dev --filter=./packages/**",
+    "build:app": "dotenv -- turbo run build --filter=./apps/**",
+    "build:pkg": "dotenv -- turbo run build --filter=./packages/**",
+    "test": "turbo run test",
+    "lint": "dotenv -- turbo run lint --continue -- --cache --cache-location node_modules/.cache/.eslintcache",
+    "lint:fix": "dotenv -- turbo run lint --continue -- --fix --cache --cache-location node_modules/.cache/.eslintcache",
+    "format": "turbo format --continue -- --cache --cache-location=node_modules/.cache/.prettiercache",
+    "format:fix": "turbo format --continue -- --write --cache --cache-location=node_modules/.cache/.prettiercache",
+    "clean": "git clean -xdf node_modules && rm -rf pnpm-lock.yaml .turbo",
+    "clean:workspaces": "turbo clean",
+    "clean:all": "pnpm clean:workspaces && pnpm clean",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@repo/tsconfig": "workspace:^",
+    "@turbo/gen": "^1.11.2",
+    "dotenv-cli": "^7.3.0",
+    "eslint": "^8.56.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "turbo": "latest",
+    "typescript": "^5.3.3"
+  },
+  "lint-staged": {
+    "apps/**/*.{js,ts,jsx,tsx}": [
+      "eslint --fix"
+    ],
+    "packages/**/*.{js,ts,jsx,tsx}": [
+      "eslint --fix"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  }
+}
