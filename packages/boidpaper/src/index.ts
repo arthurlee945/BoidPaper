@@ -1,1 +1,1 @@
-export const name = 'pkg-bp-babayaga';
+export const name = "pkg-bp-babayaga";

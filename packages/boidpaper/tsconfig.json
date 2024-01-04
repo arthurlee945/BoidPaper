@@ -1,49 +1,10 @@
 {
-    "compilerOptions": {
-        //environement
-        "target": "es2022",
-        "lib": ["es2017", "es7", "es6", "es2022"],
-        "moduleDetection": "force",
-
-        //modules
-        "rootDir": "./src",
-        "module": "NodeNext",
-        "moduleResolution": "NodeNext",
-        "resolveJsonModule": true,
-
-        //emit
-        "outDir": "./dist",
-        "sourceMap": true,
-        "declaration": true,
-        "inlineSources": false,
-
-        //type checking
-        "strict": true,
-        "strictNullChecks": true,
-        "noUnusedLocals": false,
-        "noUnusedParameters": false,
-        "noUncheckedIndexedAccess": true,
-        "noFallthroughCasesInSwitch": true,
-
-        //interop constraints
-        // "verbatimModuleSyntax": true,
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "isolatedModules": true,
-
-        //js support
-        "allowJs": true,
-
-        //projects
-        "incremental": true,
-        "composite": true,
-
-        //completeness
-        "skipLibCheck": true,
-
-        //output formatting
-        "preserveWatchOutput": true
-    },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "./dist"]
+  "extends": "@boidpaper/tsconfig/ws-package.json",
+  "display": "BoidPaper tsconfig",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

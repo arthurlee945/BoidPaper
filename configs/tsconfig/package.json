@@ -6,7 +6,7 @@
   "files": [
     "base.json",
     "nextjs.json",
-    "workspace-package.json",
+    "ws-package.json",
     "react-library.json"
   ]
 }

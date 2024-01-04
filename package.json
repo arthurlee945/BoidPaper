@@ -23,13 +23,12 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@boidpaper/tsconfig": "workspace:^",
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
-    "@boidpaper/tsconfig": "workspace:^",
     "@turbo/gen": "^1.11.2",
     "dotenv-cli": "^7.3.0",
     "eslint": "^8.56.0",
-    "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
     "turbo": "latest",
@@ -45,5 +44,8 @@
     "*.json": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "husky": "^8.0.3"
   }
 }
