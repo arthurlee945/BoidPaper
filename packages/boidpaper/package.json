@@ -57,5 +57,9 @@
       "@boidpaper/eslint-config/base.cjs"
     ]
   },
-  "prettier": "@boidpaper/prettier"
+  "prettier": "@boidpaper/prettier",
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "three": "^0.160.0"
+  }
 }
