@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "BoidPaper Core Package",
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "files": [
     "dist"
@@ -19,9 +19,9 @@
   },
   "scripts": {
     "build:types": "tsc --project tsconfig.build.json",
-    "build:src": "node buildConfig/build.cjs",
-    "build": "rm -rf dist tsconfig.tsbuildinfo && npm-run-all --parallel build:*",
-    "dev": "node build/build-watch.cjs",
+    "build:src": "ts-node esbuild/build.ts",
+    "build": "rm -rf dist node_modules/.cache/tsbuildinfo.json && npm-run-all --parallel build:*",
+    "dev": "ts-node esbuild/build-watch.ts",
     "test": "jest",
     "lint": "eslint src --ext .js,.ts",
     "lint:fix": "eslint --fix src --ext .js,.ts",

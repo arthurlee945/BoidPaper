@@ -1,4 +1,9 @@
 {
-    "extends": "./tsconfig.json",
-    "exclude": ["**/*.test.ts"]
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
+  },
+  "exclude": ["**/*.test.ts", "esbuild"]
 }
