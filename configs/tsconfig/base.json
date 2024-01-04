@@ -13,11 +13,10 @@
     "noUncheckedIndexedAccess": true,
     "noFallthroughCasesInSwitch": true,
 
-    "forceConsistentCasingInFileNames": true,
-    "verbatimModuleSyntax": true,
-
     "esModuleInterop": true,
     "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
 
     "incremental": true,
     "composite": false,

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Workspace Package",
+  "display": "Package Config",
   "extends": "./base.json",
   "compilerOptions": {
     "lib": ["es2017", "es7", "es6", "es2022"],
@@ -12,10 +12,10 @@
     "resolveJsonModule": true,
 
     "outDir": "./dist",
+    "sourceMap": true,
+    "noEmit": false,
 
     "allowJs": true,
-
-    "sourceMap": true,
 
     "composite": true
   },

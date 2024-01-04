@@ -34,7 +34,18 @@ const config = {
     "@typescript-eslint/consistent-type-imports": ["warn", { prefer: "type-imports", fixStyle: "separate-type-imports" }],
     "import/consistent-type-specifier-style": ["error", "prefer-inline"],
   },
-  ignorePatterns: ["**/.eslintrc.cjs", "**/*.config.js", "**/*.config.cjs", ".next", "dist", "pnpm-lock.yaml"],
+  ignorePatterns: [
+    "**/.eslintrc.cjs",
+    "**/*.config.js",
+    "**/*.config.cjs",
+    "**/*.config.ts",
+    "build",
+    ".next",
+    "dist",
+    "tests/**/*",
+    "yarn.lock",
+    "pnpm-lock.yaml",
+  ],
   reportUnusedDisableDirectives: true,
 };
 
