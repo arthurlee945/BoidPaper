@@ -10,7 +10,6 @@
     "moduleResolution": "NodeNext",
     "resolveJsonModule": true,
 
-    "outDir": "./dist",
     "sourceMap": true,
     "noEmit": false,
 

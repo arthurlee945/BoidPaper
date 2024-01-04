@@ -10,6 +10,7 @@
     "preinstall": "npx only-allow pnpm",
     "dev": "dotenv -- turbo run dev --filter=./apps/**",
     "dev:pkg": "dotenv -- turbo run dev --filter=./packages/**",
+    "build": "dotenv -- turbo run build",
     "build:app": "dotenv -- turbo run build --filter=./apps/**",
     "build:pkg": "dotenv -- turbo run build --filter=./packages/**",
     "test": "turbo run test",
