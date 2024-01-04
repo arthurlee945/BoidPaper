@@ -16,5 +16,6 @@
     "next/router.d.ts",
     "next/dist/client/router.d.ts"
   ],
-  "cSpell.ignoreWords": ["Boid"]
+  "cSpell.ignoreWords": ["Boid"],
+  "cSpell.words": ["lerp"]
 }

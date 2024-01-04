@@ -4,7 +4,7 @@
     "rootDir": "./src",
     "outDir": "./dist",
     "emitDeclarationOnly": true,
-    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.watch.json"
   },
   "exclude": ["**/*.test.ts", "esbuild"]
 }
