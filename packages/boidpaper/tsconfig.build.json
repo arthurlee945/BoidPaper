@@ -3,7 +3,8 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
+    "emitDeclarationOnly": true,
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
   },
-  "exclude": ["**/*.test.ts", "esbuild"]
+  "exclude": ["**/*.test.ts", "src/util", "esbuild"]
 }

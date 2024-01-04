@@ -2,7 +2,8 @@
   "extends": "@boidpaper/tsconfig/ws-package.json",
   "display": "BoidPaper tsconfig",
   "compilerOptions": {
-    "resolveJsonModule": true
+    "lib": ["es2017", "esnext", "dom", "dom.iterable"],
+    "resolveJsonModule": true,
   },
   "include": ["src/**/*", "esbuild/**/*"],
   "exclude": ["node_modules", "dist"]
