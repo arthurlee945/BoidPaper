@@ -20,9 +20,9 @@
   },
   "scripts": {
     "build:types": "tsc --project tsconfig.build.json",
-    "build:esbuild": "node build.cjs",
+    "build:esbuild": "node esbuild.build.cjs",
     "build": "rm -rf dist node_modules/.cache/tsbuildinfo.json node_modules/.cache/tsbuildinfo.watch.json && npm-run-all --parallel build:*",
-    "dev:esbuild": "node watch.cjs",
+    "dev:esbuild": "node esbuild.watch.cjs",
     "dev:types": "tsc --project tsconfig.watch.json --watch",
     "dev": "npm-run-all --parallel dev:*",
     "test": "jest",
