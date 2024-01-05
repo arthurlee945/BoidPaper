@@ -1,5 +1,5 @@
-import { Fog, PerspectiveCamera, Scene } from "three";
-import { WebGLRenderer } from "three/src/renderers/WebGLRenderer.js";
+import { Fog, PerspectiveCamera, Scene, WebGLRenderer } from "three";
+import { GUI } from "three/addons/libs/lil-gui.module.min.js";
 
 import { floorSqrtRoot } from "../../util/funcs/geometry/floorSqrtRoot";
 import { type BaseBoidInitializer, type BaseBoidPaperOpts } from "./baseBoidPaperOpts";
@@ -27,9 +27,11 @@ export abstract class BaseBoidPaper {
   protected readonly renderer: WebGLRenderer;
   protected readonly scene: Scene;
   protected readonly camera: PerspectiveCamera;
+  protected readonly gui: GUI;
   //-------- Internal
   protected readonly sqrtBoids: number;
 
+  //-------- Variables
   protected cntX?: number;
   protected cntY?: number;
 
@@ -52,6 +54,8 @@ export abstract class BaseBoidPaper {
     //-------- Camera
     this.camera = new PerspectiveCamera(...cameraOpts);
 
+    //-------- Gui
+    this.gui = new GUI();
     //-------- Method Binds
     this.initialize = this.initialize.bind(this);
   }
