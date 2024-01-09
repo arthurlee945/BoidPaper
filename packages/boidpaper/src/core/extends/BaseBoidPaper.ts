@@ -7,7 +7,7 @@ import { throttle } from "../../util/funcs/global/throttle";
 import { BoidPaperGPURenderer } from "../utility/BoidPaperGPURenderer";
 import { type BaseBoidPaperOpts } from "./baseBoidPaperOpts";
 
-const baseBPOpts = {
+export const baseBPOpts = {
   boid: {
     count: 1024,
   },
@@ -23,8 +23,6 @@ const baseBPOpts = {
     fog: true,
     fogOpts: [0xffffff, 100, 1000],
   },
-  gui: undefined,
-  stats: false,
 } as const satisfies BaseBoidPaperOpts;
 
 export abstract class BaseBoidPaper {
@@ -66,8 +64,8 @@ export abstract class BaseBoidPaper {
     rendererOpts = baseBPOpts.rendererOpts,
     cameraOpts = baseBPOpts.cameraOpts,
     sceneOpts = baseBPOpts.sceneOpts,
-    gui = baseBPOpts.gui,
-    stats = baseBPOpts.stats,
+    gui,
+    stats,
   }: BaseBoidPaperOpts) {
     //-------- Opt Variables
     this.boid = { sqrt: floorSqrtRoot(boid.count), color: boid.color };
